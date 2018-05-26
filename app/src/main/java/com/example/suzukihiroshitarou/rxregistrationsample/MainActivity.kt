@@ -42,6 +42,22 @@ class MainActivity : AppCompatActivity() {
                     Timber.e(it.message)
                 })
 
+//        Observables.zip(
+//                nameStream,
+//                birthdayStream,
+//                genderStream,
+//                { name, birthday, gender -> name && birthday && gender})
+//                .subscribeOn(AndroidSchedulers.mainThread())
+//                .subscribe({
+//                    if (it == true) {
+//                        setRegisterButton()
+//                    } else {
+//                        setUnRegisterButton()
+//                    }
+//                }, {
+//                    Timber.e(it.message)
+//                })
+
     }
 
     private fun setRegisterButton() {
